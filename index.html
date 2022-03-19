@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="bg-info-light">
+    <div class="container">
+        <!-- HEADER -->
+        <header class="navbar  justify-content-between">
+            <a href="https://uskudar.edu.tr/"><img class="logo" src="https://uskudar.edu.tr/assets/kurumsal/logo-en/png/uskudar-university-logo.png" /></a>
+            <h5 class="text-light">Uskudar University Address Book</h5>
+            <button class="btn btn-info my-2 my-sm-0" type="submit">Log out</button>
+        </header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="addUser.html">Add</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="viewAll.html">View All</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+        </nav>
+        <!-- USER INFO CARD -->
+        <div class="card bg-light mt-2 mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Welcome to Uskudar University Address Book, @Name!</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <p class="card-text">Name : @Name</p>
+              <p class="card-text">Department : @Department</p>
+              <p class="card-text">Position : @Position</p>
+              <p class="card-text">Phone Number : @Phone</p>
+              <p class="card-text">E-mail : @email</p>
+              <p class="card-text">Office No : @office</p>
+              <p class="card-text">Time Table:</p>
+
+                <!-- TIME TABLE-->
+                
+                <div class="table-responsive">
+                    <table class="table table-bordered text-center">
+
+                        <!-- COLS -->
+                        <thead>
+                            <tr class="bg-light-gray">
+                                <th class="text-uppercase">Time
+                                </th>
+                                <th class="text-uppercase">Monday</th>
+                                <th class="text-uppercase">Tuesday</th>
+                                <th class="text-uppercase">Wednesday</th>
+                                <th class="text-uppercase">Thursday</th>
+                                <th class="text-uppercase">Friday</th>
+                                <th class="text-uppercase">Saturday</th>
+                            </tr>
+                        </thead>
+
+                        <!-- ROWS-->
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">09:00am</td>
+                                <td>
+                                    <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">SE302</span>
+                                    <div class="margin-10px-top font-size14">A BLOCK THIRD FLOOR</div>
+                                </td>
+                                <td>
+                                    <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">MATH302</span>
+                                    <div class="margin-10px-top font-size14">ONLINE</div>
+                                </td>
+                                <td>
+                                    <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">ESP124</span>
+                                    <div class="margin-10px-top font-size14">ONLINE</div>
+                                </td>
+                                <td>
+                                    <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">MATH204</span>
+                                    <div class="margin-10px-top font-size14">B BLOCK THIRD FLOOR</div>
+                                </td>
+                                <td>
+                                    <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">COME202</span>
+                                    <div class="margin-10px-top font-size14">C BLOCK -1 FLOOR</div>
+                                </td>
+                                <td>
+                                    <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">SE204</span>
+                                    <div class="margin-10px-top font-size14">A BLOCK THIRD FLOOR</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle">10:00am</td>
+                                <td>
+                                    <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">COME202</span>
+                                    <div class="margin-10px-top font-size14">C BLOCK -1 FLOOR</div>
+                                </td>
+                                <td class="bg-light-gray"></td>
+                                <td>
+                                    <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">SE204</span>
+                                    <div class="margin-10px-top font-size14">A BLOCK THIRD FLOOR</div>
+                                </td>
+                                <td>
+                                    <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">MATH204</span>
+                                    <div class="margin-10px-top font-size14">B BLOCK THIRD FLOOR</div>
+                                </td>
+                                <td>
+                                    <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">SE302</span>
+                                    <div class="margin-10px-top font-size14">A BLOCK THIRD FLOOR</div>
+                                </td>
+                                <td class="bg-light-gray"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle">11:00am</td>
+                                <td class="bg-light-gray"></td>
+                                <td class="bg-light-gray"></td>
+                                <td class="bg-light-gray"></td>
+                                <td class="bg-light-gray"></td>
+                                <td class="bg-light-gray"></td>
+                                <td class="bg-light-gray"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle">12:00pm</td>
+                                <td class="bg-light-gray"></td>
+                                <td>
+                                    <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">MATH204</span>
+                                    <div class="margin-10px-top font-size14">B BLOCK THIRD FLOOR</div>
+                                </td>
+                                <td>
+                                    <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">MATH302</span>
+                                    <div class="margin-10px-top font-size14">ONLINE</div>
+                                </td>
+                                <td>
+                                    <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">SE204</span>
+                                    <div class="margin-10px-top font-size14">A BLOCK THIRD FLOOR</div>
+                                </td>
+                                <td class="bg-light-gray"></td>
+                                <td>
+                                    <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">ESP124</span>
+                                    <div class="margin-10px-top font-size14">ONLINE</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle">01:00pm</td>
+                                <td>
+                                    <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">SE204</span>
+                                    <div class="margin-10px-top font-size14">A BLOCK THIRD FLOOR</div>
+                                </td>
+                                <td>
+                                    <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">ESP124</span>
+                                    <div class="margin-10px-top font-size14">ONLINE</div>
+                                </td>
+                                <td class="bg-light-gray"></td>
+                                <td>
+                                    <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">COME202</span>
+                                    <div class="margin-10px-top font-size14">C BLOCK -1 FLOOR</div>
+                                </td>
+                                <td>
+                                    <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">SE204</span>
+                                    <div class="margin-10px-top font-size14">A BLOCK THIRD FLOOR</div>
+                                </td>
+                                <td>
+                                    <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">MATH302</span>
+                                    <div class="margin-10px-top font-size14">ONLINE</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <button class="btn btn-info my-2 my-sm-0" type="submit">Update Informations</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
