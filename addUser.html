@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="css/style.css">
     
 </head>
-<body class="bg-info-light">
+<body class="bg-dark-white">
     <div class="container">
         <!-- HEADER -->
         <header class="navbar  justify-content-between">
             <a href="https://uskudar.edu.tr/"><img class="logo" src="https://uskudar.edu.tr/assets/kurumsal/logo-en/png/uskudar-university-logo.png" /></a>
-            <h5 class="text-light">Uskudar University Address Book</h5>
-            <button class="btn btn-info my-2 my-sm-0" type="submit">Log out</button>
+            <h5>Uskudar University Address Book</h5>
+            <button class="btn btn-info-light my-2 my-sm-0" type="submit">Log out</button>
         </header>
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -56,12 +56,28 @@
                             <input type="email" class="form-control" id="email" placeholder="Email">
                         </div>
                     </div>
-
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="name">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="email">Password</label>
+                            <input type="email" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="department">Role</label>
+                            <select class="form-control" id="role" name="role">
+                                <option>Student</option>
+                                <option>Employee</option>
+                                <option>Human Resources</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="department">Department</label>
-                            <select class="form-control" id="department">
-                                <option>Choose..</option>
+                            <select class="form-control" id="department" name="department">
                                 <option>Department1</option>
                                 <option>Department2</option>
                                 <option>Department3</option>
@@ -71,8 +87,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="position">Position</label>
-                            <select class="form-control" id="position">
-                                <option>Choose..</option>
+                            <select class="form-control" id="position" name="position">
                                 <option>Position1</option>
                                 <option>Position2</option>
                                 <option>Position3</option>
@@ -84,28 +99,17 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="phone">Phone Number</label>
-                            <input type="phone" class="form-control" id="phone"placeholder="Enter phone number">
+                            <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" value="0" placeholder="Enter phone number">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="office">Office Number</label>
-                            <input type="number" class="form-control" id="office" placeholder="Enter office number">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="phone">Phone Number</label>
-                            <input type="phone" class="form-control" id="phone"placeholder="Enter phone number">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="office">Office Number</label>
-                            <input type="number" class="form-control" id="office" placeholder="Enter office number">
+                            <input type="number" class="form-control" id="officeNo" name="officeNo" placeholder="Enter office number">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="courses">Courses</label>
-                            <select class="form-control" id="courses">
-                                <option>Choose..</option>
+                            <select class="form-control" id="courses" name="course">
                                 <option>Software Project Management</option>
                                 <option>Object Oriented Programming II</option>
                                 <option>Software Construction</option>
@@ -113,19 +117,31 @@
                                 <option>Numerical Analysis</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-2">
                             <label for="time">Course Time</label>
-                            <select class="form-control" id="time">
-                                <option>09:00 - 10:00</option>
-                                <option>10:00 - 11:00</option>
-                                <option>11:00 - 12:00</option>
-                                <option>12:00 - 13:00</option>
-                                <option>13:00 - 14:00</option>
-                                <option>14:00 - 15:00</option>
+                            <select class="form-control" id="time" name="time">
+                                <option>09:00</option>
+                                <option>10:00</option>
+                                <option>11:00</option>
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
                             </select>
                         </div>
                         <div class="form-group col-md-2">
-                            <button class="mt-4_5 btn btn-primary" id="addCourse"  type="button">&#10010;</button>
+                            <label for="time">Course Day</label>
+                            <select class="form-control" id="day" name="day">
+                                <option>Monday</option>
+                                <option>Tuesday</option>
+                                <option>Wednesday</option>
+                                <option>Thursday</option>
+                                <option>Friday</option>
+                                <option>Saturday</option>
+                                <option>Sunday</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <button class="mt-4_5 btn btn-info-light" id="addCourse"  type="button">&#10010;</button>
                         </div>
                     </div>
                     
@@ -135,7 +151,7 @@
                             
                         </ul>
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3">ADD USER</button>
+                    <button type="submit" class="btn btn-info-light mt-3">ADD USER</button>
                 </form>
             </div>
         </div>
