@@ -37,7 +37,12 @@ button.bg-info-light:focus,button.bg-info-light:hover{background-color:#07948f!i
 	background-color: #E5EBEA;
 }
 
-
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #09b3ad;
+    border-color: #09b3ad;
+}
 
 
 
